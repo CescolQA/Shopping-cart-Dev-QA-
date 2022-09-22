@@ -1,4 +1,4 @@
-# ShoppingCart
+# 💻 Dev Description / ShoppingCart 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
@@ -6,22 +6,53 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# 🔍 QA Description / Analyst 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This SUT is being analized at the beggining with a BFA (Business Feature Analysis) & SFH  (Software Features Hierarchy), or similar to a SRS (Software Specificaition Software) to have to a complete User Stories scope.
 
-## Build
+# Componentes / Feature Scheme
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+SUT: SCP (WEB) | EPIC: LOGIN |  Login de cuenta nueva y registro de usuario
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+      US: WEB | Login | Crear cuenta nueva de usuario con correo electrónico y registro
 
-## Running end-to-end tests
+      US: WEB | Login | Iniciar sesión de usuario con correo electrónico y registro 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+      US: WEB | Login | Cerrar sesión de usuario
 
-## Further help
+SUT: SCP (WEB) | EPIC: HOME | Navegación por el PLP y las opciones del menú 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+       US: WEB | Home | Añadir productos al carrito de compras
+
+      US: WEB | Home | Ir a la página del carrito de compras
+
+      US: WEB | Home | Desplegar las opciones del menú
+
+      US: WEB | Home | Agregar un producto al PLP como administrador
+
+      US: WEB | Home | Ir a la página Mis Pedidos
+
+SUT: SCP (WEB) | EPIC: SCP | Modificar y/o pedir los productos agregados al carrito
+
+      US: WEB | SCP | Modificar la solicitud del pedido del carrito de compras
+
+      US: WEB | SCP | Pedir el pedido del carrito de compras
+
+      US: WEB | SCP | Volver a la página del Home desde el SCP
+
+SUT: SCP (WEB) | EPIC: Pedidos | Comprobación de listado de pedidos
+
+      US: WEB | Pedidos | Comprobar la solicitudes del listado de pedidos
+      
+      
+# Jornada de Prácticas en Panacol (Proyectos Personales)
+🔵 Epica de Desarrollo del SUT: Shopping Cart (Dev Eliud) Github @eliudjose
+
+🔰 Puntos relevantes del desarrollo de esta US 
+  ✔ Analisis de Requerimientos 
+    ✔ BFA (Business Feature Analysis)
+      ✔ SFH  (Software Features Hierarchy)
+         ✔ Desglose de User Stories (US)
+
+<< En los archivos adjuntos está desglosado el Analisis Funcional con el desarrollo del proceso QA. Check it out! >>
