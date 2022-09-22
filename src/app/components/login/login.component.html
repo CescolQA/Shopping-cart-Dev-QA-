@@ -1,0 +1,79 @@
+<div class="body">
+    <div class="login">
+
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>Login/Register</mat-card-title>
+                <mat-card-subtitle>ShoppingCart</mat-card-subtitle>
+            </mat-card-header>
+
+            <mat-card-content>
+
+                <mat-tab-group>
+                    <mat-tab label="Login">
+                        <br />
+                        <div class="form">
+                            <div class="example-form">
+                                <mat-form-field class="example-full-width" appearance="fill">
+                                    <mat-label>email</mat-label>
+                                    <input type="email" matInput placeholder="Enter your email"
+                                        [(ngModel)]="usuario.email">
+                                    <mat-icon matSuffix>email</mat-icon>
+                                </mat-form-field>
+
+                                <mat-form-field class="example-full-width" appearance="fill">
+                                    <mat-label>password</mat-label>
+                                    <input type="password" matInput placeholder="Enter your password"
+                                        [(ngModel)]="usuario.password">
+                                    <mat-icon matSuffix>lock</mat-icon>
+                                </mat-form-field>
+
+                                <section>
+                                    <button mat-raised-button color="primary" (click)="Ingresar()">Login</button>
+                                </section>
+                                <br />
+                                <section>
+                                    <button mat-raised-button color="warn" (click)="ingresarConGoogle()">Login with
+                                        Google</button>
+                                </section>
+                            </div>
+                        </div>
+                    </mat-tab>
+
+                    <mat-tab label="Register">
+                        <br />
+                        <div class="form">
+                            <div class="example-form">
+                                <mat-form-field class="example-full-width" appearance="fill">
+                                    <mat-label>email</mat-label>
+                                    <input type="email" matInput placeholder="Enter your email"
+                                        [(ngModel)]="usuario.email">
+                                    <mat-icon matSuffix>email</mat-icon>
+                                </mat-form-field>
+
+                                <mat-form-field class="example-full-width" appearance="fill">
+                                    <mat-label>password</mat-label>
+                                    <input type="password" matInput placeholder="Enter your password"
+                                        [(ngModel)]="usuario.password">
+                                    <mat-icon matSuffix>lock</mat-icon>
+                                </mat-form-field>
+
+                                <mat-card-content>
+                                    <section>
+                                        <button mat-raised-button color="primary"
+                                            (click)="Registrar()">Register</button>
+                                    </section>
+                                </mat-card-content>
+
+
+                            </div>
+                        </div>
+                    </mat-tab>
+
+                </mat-tab-group>
+
+            </mat-card-content>
+
+        </mat-card>
+    </div>
+</div>

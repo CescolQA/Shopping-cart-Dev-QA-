@@ -1,0 +1,45 @@
+<mat-toolbar color="primary">
+  <div class="" *ngIf="userLogget|async as user">
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/form-produc">
+        <mat-icon>dialpad</mat-icon>
+        <span>Add to product</span>
+      </button>
+
+      <button mat-menu-item routerLink="/mis-pedidos">
+        <mat-icon>description</mat-icon>
+        <span>Mis pedidos</span>
+      </button>
+
+      <button mat-menu-item (click)="logOut()" routerLink="/login">
+        <mat-icon>logout</mat-icon>
+        <span>Cerrar sesion</span>
+      </button>
+
+    </mat-menu>
+  </div>
+
+  <span>ShoppingCart</span>
+  <span class="example-spacer"></span>
+
+  <div class="">
+
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon"
+      *ngIf="userLogget|async as user" routerLink="/cart">
+      <mat-icon>shopping_cart</mat-icon>
+    </button>
+
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" routerLink="/home"
+      *ngIf="userLogget|async as user; else btnIngresar">
+      <mat-icon>home</mat-icon>
+    </button>
+
+    <ng-template #btnIngresar>
+      <button mat-raised-button color="primary" routerLink="/login">Ingresar</button>
+    </ng-template>
+  </div>
+
+</mat-toolbar>

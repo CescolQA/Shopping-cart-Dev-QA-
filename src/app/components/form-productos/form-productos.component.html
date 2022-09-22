@@ -1,0 +1,76 @@
+<div class="body">
+    <div class="login">
+
+        <mat-card class="example-card">
+            <mat-card-header>
+                <mat-card-title>Ingrese datos del producto</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="form">
+                    <div class="example-form">
+                        <mat-form-field class="example-full-width" appearance="fill">
+                            <mat-label>Nombre del producto</mat-label>
+                            <input type="nombre" matInput placeholder="Nombre del producto"
+                                [(ngModel)]="newProducto.nombre">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width" appearance="fill">
+                            <mat-label>Precio del producto</mat-label>
+                            <input type="precio" matInput placeholder="Precio del producto"
+                                [(ngModel)]="newProducto.precio">
+                        </mat-form-field>
+
+                        <mat-form-field class="example-full-width" appearance="fill">
+                            <mat-label>Descripcion del producto</mat-label>
+                            <textarea matInput placeholder="Descripcion del producto"
+                                [(ngModel)]="newProducto.description"></textarea>
+                        </mat-form-field>
+
+                        <br/>
+                        <button>
+                            <label for="file-upload">
+                              <mat-icon slot="icon-only" name="images">image</mat-icon>
+                            </label>
+                             <input  (change)="uploadImage($event)" id="file-upload" style="display: none" type="file"  accept="image/*">
+                         </button>
+
+                        <br/>
+                        <br/>
+                        <section>
+                            <button mat-raised-button color="primary" (click)="guardarProducto()">Guardar</button>
+                        </section>
+
+                    </div>
+                </div>
+            </mat-card-content>
+
+        </mat-card>
+        <br />
+        <div>
+            <img class="image"  [src]="newProducto.foto">
+        </div>
+        <br />
+        <mat-card>
+            <div class="product" *ngFor="let producto of productos">
+
+                <mat-list-item> {{producto.nombre}} </mat-list-item>
+                <div class="">
+
+                    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon"
+                        (click)="deleteProduct(producto)">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </div>
+
+
+            </div>
+
+        </mat-card>
+
+
+    </div>
+
+
+
+
+</div>

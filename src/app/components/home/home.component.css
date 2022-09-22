@@ -1,0 +1,45 @@
+.content {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  float: left;
+  text-align: center;
+  width: 28%;
+  margin-left: 4%;
+  margin-right: 0%;
+  margin-top: 5%;
+  margin-bottom: 0%;
+}
+
+@media(max-width: 700px){
+
+  .content {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    float: left;
+    text-align: center;
+    width: 45%;
+    margin-left: 3%;
+    margin-right: 0%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+  }
+}
+
+@media(max-width: 400px){
+
+  .content {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    float: left;
+    text-align: center;
+    width: 90%;
+    margin-left: 3%;
+    margin-right: 0%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+  }
+}
+

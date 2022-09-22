@@ -1,0 +1,19 @@
+<mat-tab-group>
+
+  <mat-tab label="Mis pedidos" (cdkAutofill)="$event" value="culminados">
+
+    <mat-card *ngFor="let pedido of pedidos" class="mt-5 mb-5 item-card body">
+      <mat-card-title>pedido Id: </mat-card-title>
+      <mat-card-subtitle class="normal">
+        <p>
+          {{pedido.uid}}
+        </p>
+        Estado: {{pedido.estado}}
+      </mat-card-subtitle>
+      <mat-card-content class="item-estado">
+      </mat-card-content>
+      <app-itemcart *ngFor="let producto of pedido.productos" [productoPedido]="producto" [botones]=false>
+      </app-itemcart>
+    </mat-card>
+  </mat-tab>
+</mat-tab-group>

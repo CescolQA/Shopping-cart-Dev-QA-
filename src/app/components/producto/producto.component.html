@@ -1,0 +1,23 @@
+<div class="grid">
+
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{producto.nombre}}</mat-card-title>
+      <mat-card-subtitle>{{producto.description}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src={{producto.foto}} style="height: auto; width: auto; max-width: 100%; max-height: 50%;" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        ${{producto.precio}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="addCarrito()">
+
+        <mat-label value="añadido">Añadir</mat-label>
+        <mat-icon>shopping_cart</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>
